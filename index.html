@@ -23,7 +23,7 @@
     <div class="mb-3">
       <label for="" class="form-label">Nhập số N</label>
       <input
-        type="text"
+        type="number"
         class="form-control"
         name=""
         id="soN"
@@ -31,7 +31,11 @@
         placeholder="Vui lòng nhập số N"
       />
     </div>
-    <button class="btn btn-success mb-3">Nhập số n</button>
+    <button class="btn btn-success mb-3" id="nhapSoN">Nhập số n</button>
+    <div
+      class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+      id="arrSoN"
+    ></div>
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
@@ -41,7 +45,8 @@
             data-bs-toggle="collapse"
             data-bs-target="#collapseOne"
             aria-expanded="true"
-            aria-controls="collapseOne"
+            aria
+            -controls="collapseOne"
           >
             1. Tổng số dương
           </button>
@@ -52,7 +57,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <button class="btn btn-success">Tính tổng</button>
+            <button class="btn btn-success" id="bT1">Tính tổng</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ1"
+            ></div>
           </div>
         </div>
       </div>
@@ -75,14 +84,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <button class="btn btn-success" id="bT2">Đếm số</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ2"
+            ></div>
           </div>
         </div>
       </div>
@@ -105,14 +111,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <button class="btn btn-success" id="bT3">Tìm số nhỏ nhất</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ3"
+            ></div>
           </div>
         </div>
       </div>
@@ -135,14 +138,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <button class="btn btn-success" id="bT4">Tìm số nhỏ nhất</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ4"
+            ></div>
           </div>
         </div>
       </div>
@@ -165,14 +165,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <button class="btn btn-success" id="bT5">Tìm số chẵn</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ5"
+            ></div>
           </div>
         </div>
       </div>
@@ -195,14 +192,33 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <div class="mb-3">
+              <label for="" class="form-label">Vị trí số 1</label>
+              <input
+                type="number"
+                class="form-control"
+                name=""
+                id="viTri1"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập Vị trí số 1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Vị trí số 2</label>
+              <input
+                type="number"
+                class="form-control"
+                name=""
+                id="viTri2"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập Vị trí số 2"
+              />
+            </div>
+            <button class="btn btn-success mb-3" id="bT6">Đổi chỗ</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ6"
+            ></div>
           </div>
         </div>
       </div>
@@ -225,14 +241,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <button class="btn btn-success" id="bT7">Sắp xếp</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ7"
+            ></div>
           </div>
         </div>
       </div>
@@ -255,14 +268,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <button class="btn btn-success" id="bT8">Tìm số nguyên tố</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ8"
+            ></div>
           </div>
         </div>
       </div>
@@ -285,14 +295,29 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <div class="mb-3">
+              <label for="" class="form-label">Nhập số nguyên</label>
+              <input
+                type="number"
+                class="form-control"
+                name=""
+                id="soNguyen"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập số nguyên"
+              />
+            </div>
+            <button class="btn btn-success mb-3" id="nhapSoNguyen">
+              Thêm số
+            </button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="arrSoNguyen"
+            ></div>
+            <button class="btn btn-success mb-3" id="bT9">Đếm số nguyên</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ9"
+            ></div>
           </div>
         </div>
       </div>
@@ -315,14 +340,11 @@
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <button class="btn btn-success mb-3" id="bT10">So sánh</button>
+            <div
+              class="bg-success bg-opacity-75 text-white p-2 rounded-2 mt-2 mb-3"
+              id="kQ10"
+            ></div>
           </div>
         </div>
       </div>
